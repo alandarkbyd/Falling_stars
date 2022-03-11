@@ -1,0 +1,46 @@
+body{
+	background-color: #1c1c1c;
+}
+.meteor{
+/*   height: 10px;*/
+  width: 0px; 
+  /* background-color: red; */
+  position: relative;
+  animation-name: move;
+  border-radius:20px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform: rotate(10deg);/*  */
+	animation-delay:2s;
+}
+
+@keyframes move{
+  0% {
+    transform: /* rotate(10deg) */;
+  
+    width: 50px;
+		transform:rotate(10deg) translatex(10px) translatey(10px);
+		
+  }
+  50% {
+    width: 50px;
+		background-color: red;
+    transform: rotate(30deg);
+    height: 5px;
+  }
+  75%{
+    width: 30px;
+		background-color: red;
+    transform: rotate(30deg)
+    transform: translatex(10px) translatey(10px);
+  }
+  100% {
+    transform: rotate(30deg);
+		background-color: red;
+    transform: translatex(1000px) translatey(500px);
+    width: 0px;
+    height: 3px;
+    
+  }
+}
+
